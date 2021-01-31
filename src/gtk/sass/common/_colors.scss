@@ -54,14 +54,14 @@ $dis_fix_fg: track($fix_fg, $a_fg_dis);
 //
 
 $bg: if($variant == dark,
-        mix(color($grey, 900), black, percentage($a_fg_2nd)),
-        mix(color($grey, 50), color($grey, 100)));
+        #2e3440,
+        #e5e9f0);
 $base: if($variant == dark,
-          mix(color($grey, 900), black),
-          white);
+          #363d4b,
+          #eceff4);
 $dark_bg: if($variant == dark,
-             mix(color($grey, 900), black, percentage($a_trk_2)),
-             mix(color($grey, 200), color($grey, 300)));
+             #292e39,
+             #d8dee9);
 
 //
 // Dark background colors on light variant
