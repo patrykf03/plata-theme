@@ -9,8 +9,8 @@
 // Foreground colors
 //
 
-$fg: if($variant == dark, color($grey, 100),
-                          mix(color($grey, 900), black));
+$fg: if($variant == dark, color(#2e3440, 100),
+                          mix(color(#2e3440, 900), black));
 $sec_fg: track($fg, $a_fg_2nd);
 $ter_fg: track($fg, $a_fg_3rd);
 
@@ -27,14 +27,14 @@ $dis_sec_sel_fg: track($sec_sel_fg, $a_fg_bdp);
 $dis_ter_sel_fg: track($ter_sel_fg, $a_fg_bdp);
 
 // placeholder text in GtkEntry
-$plc_fg: if($variant == light, color($grey, $primary_level),
-                               color($grey, $primary_level + 200));
+$plc_fg: if($variant == light, color(#2e3440, $primary_level),
+                               color(#2e3440, $primary_level + 200));
 
 //
 // Inverted foreground colors
 //
 
-$inv_fg: color($grey, 100);
+$inv_fg: color(#2e3440, 100);
 $inv_sec_fg: track($inv_fg, $a_fg_2nd);
 $inv_ter_fg: track($inv_fg, $a_fg_3rd);
 
@@ -44,7 +44,7 @@ $dis_inv_sec_fg: track($inv_sec_fg, $a_fg_dis);
 $unf_title_fg: if($variant == light, track($fg, $a_fg_bdp),
                                      track($inv_fg, $a_fg_bdp));
 
-$fix_fg: color($grey, 900);
+$fix_fg: color(#2e3440, 900);
 $sec_fix_fg: track($fix_fg, $a_fg_2nd);
 $ter_fix_fg: track($fix_fg, $a_fg_3rd);
 $dis_fix_fg: track($fix_fg, $a_fg_dis);
@@ -179,15 +179,15 @@ $err_bg: $err;
 // Tooltip background color
 //
 
-$tooltip_bg: if($variant == dark, color($grey, 800),
-                                  color($grey, 400));
-$inv_tooltip_bg: color($grey, 800);
+$tooltip_bg: if($variant == dark, color(#2e3440, 800),
+                                  color(#2e3440, 400));
+$inv_tooltip_bg: color(#2e3440, 800);
 
 //
 // Solid panel color
 //
 
-$panel_bg: if($variant == light, color($grey, 300), black);
+$panel_bg: if($variant == light, color(#2e3440, 300), black);
 $panel_div_fg: if($variant == light, track($fg, $a_div_2),
                                      track($inv_fg, $a_div_2));
 
