@@ -175,10 +175,12 @@ $ques_bg: color($yellow, $secondary_level);
 $warn_bg: color($orange, $secondary_level);
 $err_bg: $err;
 
-//
 // Tooltip background color
 //
 
+$tooltip_bg: if($variant == dark, color($grey, 800),
+                                  color($grey, 400));
+$inv_tooltip_bg: color($grey, 800);
 $tooltip_bg: if($variant == dark, color(#2e3440, 800),
                                   color(#2e3440, 400));
 $inv_tooltip_bg: color(#2e3440, 800);
@@ -187,6 +189,7 @@ $inv_tooltip_bg: color(#2e3440, 800);
 // Solid panel color
 //
 
+$panel_bg: if($variant == light, color($grey, 300), black);
 $panel_bg: if($variant == light, color(#2e3440, 300), black);
 $panel_div_fg: if($variant == light, track($fg, $a_div_2),
                                      track($inv_fg, $a_div_2));
