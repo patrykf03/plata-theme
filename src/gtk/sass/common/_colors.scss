@@ -187,7 +187,7 @@ $inv_tooltip_bg: #eceff4;
 // Solid panel color
 //
 
-$panel_bg: if($variant == light, color(#2e3440, 300), #2e3440);
+$panel_bg: if($variant == light, #e5e9f0, #2e3440);
 $panel_div_fg: if($variant == light, track($fg, $a_div_2),
                                      track($inv_fg, $a_div_2));
 
@@ -196,6 +196,6 @@ $panel_div_fg: if($variant == light, track($fg, $a_div_2),
 //
 
 $dark_sel_bg: if($variant == light,
-                 mix($sel_bg, $dark_bg, percentage($a_fg_bdp)),
-                 mix($sel_bg, $inv_dark_bg, percentage($a_fg_bdp)));
+                #e5e9f0),
+                #2e3440);
 $div_top_sel_fg: mix(white, $dark_sel_bg, percentage($a_div_2));
