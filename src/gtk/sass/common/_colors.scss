@@ -179,7 +179,7 @@ $err_bg: $err;
 // Tooltip background color
 //
 
-$tooltip_bg: if($variant == dark, #2e3440), #e5e9f0;
+$tooltip_bg: if($variant == dark, #2e3440, #e5e9f0);
 $inv_tooltip_bg: #2e3440;
 
 //
