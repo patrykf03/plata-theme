@@ -67,9 +67,9 @@ $dark_bg: if($variant == dark,
 // Dark background colors on light variant
 //
 
-$inv_bg: mix(color($grey, 900), black, percentage($a_fg_2nd));
-$inv_base: mix(color($grey, 900), black);
-$inv_dark_bg: mix(color($grey, 900), black, percentage($a_trk_2));
+$inv_bg: mix(#2e3440, black, percentage($a_fg_2nd));
+$inv_base: mix(#2e3440, black);
+$inv_dark_bg: mix(#2e3440, black, percentage($a_trk_2));
 
 //
 // Light background colors on dark variant
