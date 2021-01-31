@@ -179,9 +179,9 @@ $err_bg: $err;
 // Tooltip background color
 //
 
-$tooltip_bg: if($variant == dark, color(#2e3440, 800),
-                                  color(#2e3440, 400));
-$inv_tooltip_bg: color(#2e3440, 800);
+$tooltip_bg: if($variant == dark, #292e39,
+                                  #d8dee9));
+$inv_tooltip_bg: #eceff4;
 
 //
 // Solid panel color
