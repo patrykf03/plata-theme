@@ -10,7 +10,7 @@
 //
 
 $fg: if($variant == dark, color(#2e3440, 100),
-                          mix(color(#2e3440, 900), black));
+                          mix(color(#2e3440, 900), #2e3440));
 $sec_fg: track($fg, $a_fg_2nd);
 $ter_fg: track($fg, $a_fg_3rd);
 
@@ -67,9 +67,9 @@ $dark_bg: if($variant == dark,
 // Dark background colors on light variant
 //
 
-$inv_bg: mix(color(#2e3440, 900), black, percentage($a_fg_2nd));
-$inv_base: mix(color(#2e3440, 900), black);
-$inv_dark_bg: mix(color(#2e3440, 900), black, percentage($a_trk_2));
+$inv_bg: mix(color(#2e3440, 900), #2e3440, percentage($a_fg_2nd));
+$inv_base: mix(color(#2e3440, 900), #2e3440);
+$inv_dark_bg: mix(color(#2e3440, 900), #2e3440, percentage($a_trk_2));
 
 //
 // Light background colors on dark variant
@@ -128,18 +128,18 @@ $trk_out_fg: track(currentColor, $a_trk_out);
 // Edge colors
 //
 
-$div_fg: if($variant == dark, track(black, $a_div_0),
-                              track(black, $a_div_1));
-$div_sld_fg: if($variant == dark, mix(black, $base, percentage($a_div_0)),
-                                  mix(black, $bg, percentage($a_div_1)));
+$div_fg: if($variant == dark, track(#2e3440, $a_div_0),
+                              track(#2e3440, $a_div_1));
+$div_sld_fg: if($variant == dark, mix(#2e3440, $base, percentage($a_div_0)),
+                                  mix(#2e3440, $bg, percentage($a_div_1)));
 $div_sld_dark_fg: if($variant != light,
-                     black,
-                     mix(black, $dark_bg, percentage($a_div_1)));
+                     #2e3440,
+                     mix(#2e3440, $dark_bg, percentage($a_div_1)));
 $div_top_fg: if($variant == light,
                 mix(white, $dark_bg, percentage($a_div_1)),
                 mix(white, $inv_dark_bg, percentage($a_div_2)));
-$div_pane_fg: if($variant == dark, track(black, $a_div_1),
-                                   track(black, $a_div_2));
+$div_pane_fg: if($variant == dark, track(#2e3440, $a_div_1),
+                                   track(#2e3440, $a_div_2));
 
 //
 // Misc colors
@@ -187,7 +187,7 @@ $inv_tooltip_bg: color(#2e3440, 800);
 // Solid panel color
 //
 
-$panel_bg: if($variant == light, color(#2e3440, 300), black);
+$panel_bg: if($variant == light, color(#2e3440, 300), #2e3440);
 $panel_div_fg: if($variant == light, track($fg, $a_div_2),
                                      track($inv_fg, $a_div_2));
 
